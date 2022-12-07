@@ -1,10 +1,10 @@
 import React from 'react';
 import './ItemList.css'
 
-const ItemList = ({ title, description }) => {
+const ItemList = ({ link, title, description }) => {
   return (
     <div className='item-list'>
-        <strong>{title}</strong>
+        <a href={link} target='blank'><strong>{title}</strong></a>
         <p>{description}</p>
         <hr />
     </div>

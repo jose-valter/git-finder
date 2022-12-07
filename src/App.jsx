@@ -56,7 +56,7 @@ const App = () => {
                 <div>
                   <h4>Repositórios</h4>
                   {repos.map(repo => (
-                    <ItemList key={repo.name} title={repo.name.length > 20 ? repo.name.slice(0,20)+'...' : repo.name} description={repo.description?.length > 50 ? repo.description?.slice(0,50)+'...' : repo.description}/>
+                    <ItemList key={repo.name} link={repo['svn_url']} title={repo.name.length > 20 ? repo.name.slice(0,20)+'...' : repo.name} description={repo.description?.length > 50 ? repo.description?.slice(0,50)+'...' : repo.description}/>
                   ))}
                   
                 </div>

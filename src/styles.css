@@ -12,3 +12,7 @@ hr{
     border: 1px solid -rgba(229, 229, -229, -0.2);
     width: clamp(250px, 36vw, 36vw);
 }
+
+a{
+    text-decoration: none;
+}
